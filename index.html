@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informative Website</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header { background: linear-gradient(135deg, #2c3e50, #3498db); color: white; padding: 50px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    nav { background: #2980b9; padding: 12px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #ffe600; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #2c3e50; text-align: center; margin-bottom: 30px; font-size: 2rem; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    .card { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .contact-list { list-style: none; padding: 0; }
+    .contact-list li { background: white; margin: 10px 0; padding: 12px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .image-box { text-align: center; margin: 20px 0; }
+    .image-box img { max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    form { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 600px; margin: 20px auto; }
+    form label { display: block; margin: 10px 0 5px; font-weight: bold; }
+    form input, form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 15px; }
+    form button { background: #2980b9; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+    form button:hover { background: #1f6391; }
+    .message { text-align: center; font-weight: bold; margin-top: 15px; display: none; }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌐 मेरी जानकारीपूर्ण वेबसाइट</h1>
+    <p>यहाँ आप अपनी संस्था / व्यवसाय / विषय की आकर्षक जानकारी प्रस्तुत कर सकते हैं।</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Information</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>स्वागत है</h2>
+    <p style="text-align:center; max-width:700px; margin:auto; font-size:1.1rem; color:#555;">यह एक आधुनिक और जानकारीपूर्ण वेबसाइट का उदाहरण है। आप इसमें अपनी पसंद का टेक्स्ट, चित्र और सेवाएँ जोड़ सकते हैं।</p>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x400/?technology,office" alt="Home Image">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>हमारे बारे में</h2>
+    <div class="card">
+      <p>यह सेक्शन आपके बारे में जानकारी देने के लिए है। आप यहाँ अपनी संस्था का परिचय, उद्देश्य और मिशन लिख सकते हैं।
+      आधुनिक डिज़ाइन के साथ यह साइट आकर्षक और उपयोगी बनती है।</p>
+      <div class="image-box">
+        <img src="https://source.unsplash.com/800x400/?team,people" alt="About Us">
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>जानकारी / सेवाएँ</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>सेवा 1</h3>
+        <p>यहाँ सेवा या जानकारी का विवरण लिखें।</p>
+      </div>
+      <div class="card">
+        <h3>सेवा 2</h3>
+        <p>यहाँ दूसरी सेवा या जानकारी का विवरण लिखें।</p>
+      </div>
+      <div class="card">
+        <h3>सेवा 3</h3>
+        <p>यहाँ तीसरी सेवा या जानकारी का विवरण लिखें।</p>
+      </div>
+      <div class="card">
+        <h3>सेवा 4</h3>
+        <p>यहाँ चौथी सेवा या जानकारी का विवरण लिखें।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>संपर्क करें</h2>
+    <p style="text-align:center; max-width:700px; margin:auto; font-size:1.1rem; color:#555;">यदि आपको कोई जानकारी चाहिए तो नीचे दिए गए संपर्क विवरण का उपयोग करें:</p>
+    <ul class="contact-list">
+      <li>📧 Email: example@email.com</li>
+      <li>📞 Phone: +91-9876543210</li>
+      <li>🌐 Website: www.example.com</li>
+    </ul>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/800x300/?contact,office" alt="Contact">
+    </div>
+
+    <h3 style="text-align:center; margin-top:30px;">Message Form</h3>
+    <form id="contactForm" action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
+      <label for="name">नाम:</label>
+      <input type="text" id="name" name="name" placeholder="अपना नाम लिखें" required>
+
+      <label for="email">ईमेल:</label>
+      <input type="email" id="email" name="email" placeholder="अपना ईमेल लिखें" required>
+
+      <label for="message">संदेश:</label>
+      <textarea id="message" name="message" rows="5" placeholder="अपना संदेश लिखें" required></textarea>
+
+      <button type="submit">भेजें</button>
+    </form>
+    <p id="formMessage" class="message"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 मेरी जानकारीपूर्ण वेबसाइट | सर्वाधिकार सुरक्षित</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          formMessage.textContent = "✅ आपका संदेश सफलतापूर्वक भेज दिया गया है!";
+          formMessage.className = "message success";
+          form.reset();
+        } else {
+          formMessage.textContent = "❌ संदेश भेजने में त्रुटि हुई, कृपया पुनः प्रयास करें।";
+          formMessage.className = "message error";
+        }
+        formMessage.style.display = "block";
+      } catch (error) {
+        formMessage.textContent = "❌ नेटवर्क समस्या! कृपया बाद में प्रयास करें।";
+        formMessage.className = "message error";
+        formMessage.style.display = "block";
+      }
+    });
+  </script>
+
+</body>
+</html>
